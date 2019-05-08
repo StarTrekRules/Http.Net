@@ -1,0 +1,10 @@
+<button onclick="send()" text="Test"></button>
+<script>
+    function send() {
+        let req = new XMLHttpRequest();
+
+        req.open("post", "/save");
+
+        req.send("{ \"entry\": \"test\" }");
+    }
+</script>
